@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: black;
+        }
+
+        #scoreContainer {
+            position: absolute;
+            z-index: 10;
+            color: white;
+            left: 10px;
+            top: 10px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="position: relative;">
+        <canvas id="myCanvas" width="1024" height="756"></canvas>
+        <p id="scoreContainer">
+            <span>Score: </span><span id="scoreElement">0</span>
+            <span><br>Life: </span><span id="lifeElement">3</span>
+        </p>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
